@@ -9,11 +9,13 @@
     "build": "gulp build",
     "build-preview": "gulp build-preview",
     "start": "gulp server",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "algolia": "atomic-algolia"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "atomic-algolia": "^0.3.17",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.0.0",
     "babel-loader": "^7.0.0",
