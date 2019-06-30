@@ -6,15 +6,16 @@
   "scripts": {
     "hugo": "gulp hugo",
     "webpack": "gulp webpack",
-    "build": "gulp build",
     "build-preview": "gulp build-preview",
     "start": "gulp server",
     "lint": "eslint src",
-    "algolia": "atomic-algolia"
+    "algolia": "atomic-algolia",
+    "build": "gulp build && yarn run algolia"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "algoliasearch": "^3.33.0",
     "atomic-algolia": "^0.3.17",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.0.0",
@@ -40,6 +41,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-util": "^3.0.7",
     "imports-loader": "^0.8.0",
+    "instantsearch.js": "^3.5.3",
     "netlify-cms": "^2.9.1",
     "postcss-cssnext": "^3.0.0",
     "postcss-import": "^12.0.0",
